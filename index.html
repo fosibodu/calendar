@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="calendar">
+        <div id="month">
+            <div class="month-picker">
+                <span class="month-name">November</span>&nbsp;&nbsp;<span class="year">2015</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td class="event-td">5
+                            <div class="event-circle"></div>
+                        </td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>
+                            <div class="today-circle"><span class="today-date">12</span></div>
+                        </td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="event-td">23
+                            <div class="event-circle"></div>
+                        </td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="today">
+            <h2 class="today-name">Thursday 12</h2>
+            <div class="days-events">
+                <p class="date">10:00AM</p>
+                <p class="description">Doctor's appointment</p>
+                <hr>
+                <p class="date">4:30PM</p>
+                <p class="description">Grocery Shopping</p>
+                <hr>
+                <p class="date">7:00PM</p>
+                <p class="description">Go see The Martian</p>
+            </div>
+            <div class="add-event">
+            <span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-plus fa-stack-1x"></i>
+</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$pink: #f3b09d;
+$blue: #013c4d;
+$white: #f5f3f0;
+$black: #333;
+$orange: #d5441c;
+
+body {
+    background-color: $pink;
+    font-family: Avenir, Arial, sans-serif;
+    color: #333;
+    font-size: 18px;
+}
+
+#calendar {
+    @include outer-container;
+    background-color: $white;
+    display: flex;
+}
+
+#today {
+    @include span-columns(4);
+    background-color: $blue;
+    color: $white;
+    align-items: stretch;
+}
+
+#month {
+    @include span-columns(8);
+}
+
+.month-picker {
+    @outer-container;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding: 50px;
+}
+
+.month-name {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.year {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+#month table {
+    @include outer-container;
+}
+
+#month table thead,
+tbody {
+    @include fill-parent();
+    @include row(table);
+}
+
+#month table th {
+    color: $blue;
+    text-transform: uppercase;
+    font-weight: 900;
+    @include span-columns(2);
+    @include pad();
+}
+
+#month table th,
+td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 33px;
+    padding-right: 33px;
+    text-align: center;
+}
+
+.today-circle {
+    background-color: $blue;
+    width: 30px;
+    height:30px;
+    border-radius: 15px;
+    color: $white;
+    margin-left: 7px; 
+    margin-top: -5px;
+}
+
+.today-name{
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20% 25px;
+    font-weight: 400;
+}
+
+.today-date {
+    position: absolute;
+    margin: 3px -11px;
+    
+}
+
+.event-circle {
+    background-color: $orange;
+    width: 5px;
+    height: 5px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.event-td {
+    position: relative;
+}
+
+.days-events {
+    margin: 0 auto;
+    padding: 0 15%;
+    
+    .date {
+        font-weight: 100;
+        margin: 0 0 5px 0;
+    }
+    
+    .description{
+        margin: 0 0 5px 0;
+    }
+}
+
+/*.add-event-circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    margin: 0 auto;
+    background-color: $white;
+    margin: 15% auto;
+}*/
+
+.add-event {
+    margin: 15% 45%;
+}
+
+.fa-circle {
+    color: $orange;
+}

@@ -1,0 +1,143 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  background-color: #f3b09d;
+  font-family: Avenir, Arial, sans-serif;
+  color: #333;
+  font-size: 18px; }
+
+#calendar {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f3f0;
+  display: flex; }
+  #calendar::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+#today {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: #013c4d;
+  color: #f5f3f0;
+  align-items: stretch; }
+  #today:last-child {
+    margin-right: 0; }
+
+#month {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  #month:last-child {
+    margin-right: 0; }
+
+.month-picker {
+  @outer-container;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding: 50px; }
+
+.month-name {
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.year {
+  font-size: 60px;
+  font-weight: 300; }
+
+#month table {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #month table::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+#month table thead,
+tbody {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+
+#month table th {
+  color: #013c4d;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: table-cell;
+  width: 16.66667%;
+  padding: 2.35765%; }
+
+#month table th,
+td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 33px;
+  padding-right: 33px;
+  text-align: center; }
+
+.today-circle {
+  background-color: #013c4d;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  color: #f5f3f0;
+  margin-left: 7px;
+  margin-top: -5px; }
+
+.today-name {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20% 25px;
+  font-weight: 400; }
+
+.today-date {
+  position: absolute;
+  margin: 3px -11px; }
+
+.event-circle {
+  background-color: #d5441c;
+  width: 5px;
+  height: 5px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 40px; }
+
+.event-td {
+  position: relative; }
+
+.days-events {
+  margin: 0 auto;
+  padding: 0 15%; }
+  .days-events .date {
+    font-weight: 100;
+    margin: 0 0 5px 0; }
+  .days-events .description {
+    margin: 0 0 5px 0; }
+
+/*.add-event-circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    margin: 0 auto;
+    background-color: $white;
+    margin: 15% auto;
+}*/
+.add-event {
+  margin: 15% 45%; }
+
+.fa-circle {
+  color: #d5441c; }
